@@ -42,9 +42,18 @@
   }
 
   //stop関数を定義
-  
+  function stop(){
+    clearInterval(timerId);
+    flg="stop";
+    flg_print();
+  }
 
-
+//reset関数を定義
+function reset(){
+  document.getElementById('sec').innerHTML='0.00';
+  sec=0;
+  sec_count=0;
+}
 
 
 
