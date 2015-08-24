@@ -1,9 +1,13 @@
-h1{text-align:center;}
+h1{
+  text-align:center;
+}
 #sec,#flg {
   text-align:center;
-font-size: 350%;
+  font-size: 350%;
 }
-div{text-align: center;}
+div{
+  text-align: center;
+}
 h1,p{
-  line-height: 10px
+  line-height: 10px;
 }
