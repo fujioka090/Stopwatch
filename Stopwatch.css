@@ -1,15 +1,15 @@
 h1{
-  text-align:center;
+  text-align:left;
 }
 #sec,#flg {
     font-size: 350%;
     font-family: Arial;
 }
 #flg{
-  text-align: center;
+  text-align: left;
 }
 div{
-  text-align: center;
+  text-align: left;
 }
 h1,p,{
   line-height: 10px;
