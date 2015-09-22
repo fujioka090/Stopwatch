@@ -2,13 +2,18 @@ h1{
   text-align:center;
 }
 #sec,#flg {
-  text-align:center;
-  font-size: 350%;
-  font-family: fantasy;
+    font-size: 350%;
+    font-family: Arial;
+}
+#flg{
+  text-align: center;
 }
 div{
   text-align: center;
 }
-h1,p{
+h1,p,{
   line-height: 10px;
+}
+p,th{
+  text-align: left;
 }

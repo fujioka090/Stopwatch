@@ -6,25 +6,40 @@
   <link rel="stylesheet"href="Stopwatch.css">
 </head>
 <body>
-  <h1>ストップウォッチ</h1>
-  <p id="sec">0.00</p>
-  <p id="flg">stop</p>
-  <div style = "align:center">
-<input type="button" value="スタート" onclick="start();" />
-<input type="button" value="ストップ" onclick="stop();" />
-<input type="button" value="リセット" onclick="reset();" /></div>
+  <table width="20%" align="center">
+    <thead>
+      <tr>
+        <h1>ストップウォッチ</h1>
+      </tr>
+      <tr>
+        <th id="sec">0.00</th>
+      </tr>
+      <tr>
+        <p id="flg">stop</p>
+      </tr>
+      <tr>
+        <div style = "align:center">
+      <input type="button" value="スタート" onclick="start();" />
+      <input type="button" value="ストップ" onclick="stop();" />
+      <input type="button" value="リセット" onclick="reset();" /></div>
+      </tr>
+    </thead>
+  </table>
 
 <script type="text/javascript">
   var sec=0;
   var sec_count=0;
+  var sec_str;
   var timerId;
   var flg="stop";
+
+  var second=document.getElementById('sec')
 
   //関数を定義して変数に格納(secを0.01ずつ増加させる)
   var time_count =function time_count(){
     sec_count +=1;
     sec=sec_count/100;
-    document.getElementById('sec').innerHTML=sec;
+    second.innerHTML=sec;
   }
 
   //フラグ表示関数を定義
@@ -50,7 +65,7 @@
 
 //reset関数を定義
 function reset(){
-  document.getElementById('sec').innerHTML='0.00';
+  second.innerHTML='0.00';
   sec=0;
   sec_count=0;
 }
